@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    align-items: center;
+}
+.chart {
+    position: relative;
+    border: 2px solid grey;
+    flex: 0 0 500px;
+    height: 300px;
+    margin: 40px;
+}
+.label-x {
+    position: absolute;
+    bottom: -1.5em;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+}
+.label-y {
+    position: absolute;
+    top: 50%;
+    left: -1.5em;
+    transform:  translateX(-50%) translateY(-50%) rotate(-90deg);
+}
+.info {
+    flex: 0 0 300px;
+}
+.chart-bar {
+    flex: 1;
+    /* background-color: #007bff; */
+    /* margin: 0 5px; */
+    transform-origin: bottom center;
+    transition: transform 0.3s ease-in-out;
+  }
+
+.chart-bar:hover ,.chart-bar.hover  {
+   background-color:  #fd5f00 !important;
+}
+
+.bars-continaer{
+    position: relative;
+      /* bottom: 0; */
+    display: flex;
+    flex-flow: wrap-reverse;
+    height: 100%;
+    width: 100%;
+}
