@@ -1,0 +1,48 @@
+.cell {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  font-family: 'Indie Flower', cursive;
+  border: 1px solid #555;
+  user-select: none;
+  cursor: pointer;
+}
+
+.cell:nth-of-type(1),
+.cell:nth-of-type(2),
+.cell:nth-of-type(3) {
+  border-top: none;
+}
+
+.cell:nth-of-type(3),
+.cell:nth-of-type(6),
+.cell:nth-of-type(9) {
+  border-right: none;
+}
+
+.cell:nth-of-type(7),
+.cell:nth-of-type(8),
+.cell:nth-of-type(9) {
+  border-bottom: none;
+}
+
+.cell:nth-of-type(1),
+.cell:nth-of-type(4),
+.cell:nth-of-type(7) {
+  border-left: none;
+}
+
+.cell:hover {
+  background-color: #f5f5f5;
+}
+
+.cell.red {
+  color: #a00;
+}
+
+.cell.blue {
+  color: #00a;
+}

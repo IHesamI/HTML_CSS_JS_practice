@@ -1,0 +1,8 @@
+.board-container {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: -1px 1px 5px #aaa;
+  display: flex;
+  flex-wrap: wrap;
+  width: 364px;
+}
